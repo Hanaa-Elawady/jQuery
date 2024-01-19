@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+:root{
+    --main-color:#F0E86A;
+}
+
+.text-color{
+    color: var(--main-color);
+}
+
+/* first section */
+header{
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(76, 83, 26, 0.6) 0% 100%) , url(../img/3ed5b7a7459f05e087dd8be5078586fb.jpg);
+    background-position: center;
+    background-size: cover;
+}
+header div h2{
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 500;
+}
+header div.menu{
+    height: 100%;
+    width: 0;
+    background-color: black;
+    overflow: hidden;
+}
+header div.menu a , header div.menu i{
+    color: white;
+    transition: all 0.5s;
+}
+header div.menu a:hover, header div.menu i:hover{
+    color :var(--main-color);
+    transition: all 0.5s;
+}
+/* end first section */
+
+/* second section  */
+div.open-tab{
+    border: 1px solid var(--main-color);
+    font-weight: 700;
+}
+div.tab{
+    background-color: var(--main-color);
+    display: none;
+}
+div.tab.special{
+    display: block;
+}
+
+/* count down section  */
+#count-down{
+    background-image:linear-gradient(rgba(76, 83, 26, 0.6) 0% 100%) , url(../img/a90c99dfc1d56701f4caac2ef62db3a5.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.count{
+    background-color: black;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 150px;
+}
+.count span{
+    font-weight: 900;
+    font-size: 30px;
+}
+
+/* contact section */
+.social{
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    margin-inline: 10px;
+    transition: all 0.5s;
+}
+.social:hover{
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+.social:hover i{
+    color: black;
+}
+button.btn{
+    background-color: var(--main-color);
+    transition: all 0.5s;
+}
+button.btn:hover ,button.btn:active , button.btn:focus{
+    background-color:#918b3b;
+    border-color: transparent;
+}
